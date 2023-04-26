@@ -1,10 +1,11 @@
+
 def main():
-    value = ingrese_real ("ingrese el valor a sumar: ")
-    process = procedimiento_suma (value)
-    mensaje = generar_mensaje (process)
-    mostrar = mostrar_mensaje (mensaje)
+  value = ingrese_real ("ingrese el valor a sumar: ")
+  process = procedimiento_suma (value)
+  mensaje = generar_mensaje (process)
+  mostrar = mostrar_mensaje (mensaje)
 
-
+main()
 
 generar_mensaje = lambda mensaje : print(mensaje)
 
