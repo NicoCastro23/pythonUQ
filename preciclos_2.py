@@ -16,4 +16,4 @@ def ingrese_real (mens):
 def  procedimiento_suma (valor):
   valor = int (valor[0]) + int(valor[1]) + int(valor[2])
   return valor
-show_message = lambda mensaje : print(mensaje)#lamda para fragmentar el codigo el cual nos da un show message
+mostrar_mensaje = lambda mensaje : print(mensaje)#lamda para fragmentar el codigo el cual nos da un show message
