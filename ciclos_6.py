@@ -1,5 +1,5 @@
 #Ejercicio 2
-
+"""
 def main():
     frase= ingresar_cadena("ingrese una frase:")
     proceso= determinar_cantidad_vocales(frase)
@@ -39,6 +39,36 @@ def generar_mensaje(resto):
     
 def mostrar_mensaje(resto):
     print(resto)
+
+
+main()
+"""
+
+#Ejercicio 3
+def main():
+    frase = ingresar_cadena("Ingrese una frase: ")
+    frase_sin_vocales = eliminar_vocales(frase)
+    mensaje_sin_vocales = generar_mensaje_sin_vocales(frase_sin_vocales)
+    mostrar_mensaje(mensaje_sin_vocales)
+
+def ingresar_cadena(mensaje):
+    valor = input(mensaje)
+    return valor
+
+def eliminar_vocales(frase):
+    nueva_frase = ""
+    for letra in frase:
+        if letra.lower() not in "aeiou":
+            nueva_frase += letra
+    return nueva_frase
+
+def generar_mensaje_sin_vocales(frase_sin_vocales):
+    mensaje = "La frase sin vocales es:\n"
+    mensaje += f"{frase_sin_vocales}\n"
+    return mensaje
+
+def mostrar_mensaje(mensaje):
+    print(mensaje)
 
 
 main()
