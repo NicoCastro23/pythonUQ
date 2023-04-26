@@ -6,20 +6,12 @@ def loop_for(numero_uno, numero_dos):
     for num in range(0, numero_dos):
         acumuler += numero_uno    
     show_message(acumuler)
-            
-
-    
 while True:
     try:
         numero_uno = give_integer("Ingrese el límite inferior: ")
         numero_dos = give_integer("Ingrese el límite superior: ")
-        
-        
-        
         show_message("El resultado seria")
         lopp_do = loop_for(numero_uno, numero_dos)
         print()
-        
-        break
     except ValueError:
         show_message("Error: Por favor ingrese valores enteros válidos. Intente de nuevo.")
