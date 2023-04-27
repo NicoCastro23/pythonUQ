@@ -1,3 +1,4 @@
+#taller
 #Este programa nos permite leer cunatos digitos tiene un numero
 give_string = lambda mensaje : str (input(mensaje))#lamda para fragmentar el codigo el cual nos permite ingresar un string
 

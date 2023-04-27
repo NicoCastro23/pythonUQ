@@ -1,3 +1,4 @@
+#taller
 #Este programa pide un numero y da los multipos de 3 desde 6 hasta n donde n > 6
 give_integer = lambda mensaje : int (input(mensaje))#lamda para fragmentar el codigo el cual nos permite ingresar un integer
 show_message = lambda mensaje : print(mensaje)#lamda para fragmentar el codigo el cual nos da un show message
