@@ -28,7 +28,7 @@ def loop (n):
         mensaje("ganaron:", ganados,"perdieron:", perdidos)  
 
 def main():
-    deini = definir()
-    lop = loop(deini)
+    deinifir_estudiantes = definir()
+    lop_do = loop(deinifir_estudiantes)
 main()
 #saber promedio, saber not max y nota min
