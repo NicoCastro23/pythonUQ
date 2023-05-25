@@ -16,12 +16,19 @@ def generar_mensaje(dato):
     mensaje = f"los nombres que empiezan con j son: {dato}"
     return mensaje
 mostrar_mensaje = lambda mensaje :print(mensaje)
-
+def filtrar_nombres_por_letra(lista_nombres):
+    nombres_filtrados = []
+    for nombre in lista_nombres:
+        if isinstance(nombre, str) and nombre.startswith("j"):
+            nombres_filtrados.append(nombre)
+    return nombres_filtrados
 def main():
     ingresar_numero = ingresar_entero("ingresar numero de estudiantes:")
     ingresar_lista = definir(ingresar_numero)
-    mensaje = generar_mensaje(ingresar_lista)
+    filtar_lista = filtrar_nombres_por_letra(ingresar_lista)
+    mensaje = generar_mensaje(filtar_lista)
     mostrar_mensaje(mensaje)
 main()
+
 
 
