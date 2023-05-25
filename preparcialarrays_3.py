@@ -14,7 +14,7 @@ def filtrar(lista):
 
 def generar_mensaje(dato):
     mensaje = f"los nombres que empiezan con j son: {dato}"
-    return generar_mensaje
+    return mensaje
 mostrar_mensaje = lambda mensaje :print(mensaje)
 
 def main():
