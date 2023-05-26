@@ -1,0 +1,33 @@
+#Realice un método que dado un número n retorne un arreglo o lista con los
+#primeros n números primos
+ingresar_entero = lambda mensaje :int(input(mensaje))
+
+def generar_mensaje(dato):
+    mensaje = f"los numeros primos son: {dato}"
+    return mensaje
+def obtener_numeros_primos(n):
+    numeros_primos = []
+    numero = 2
+
+    while len(numeros_primos) < n:
+        es_primo = True
+
+        for i in range(2, int(numero ** 0.5) + 1):
+            if numero % i == 0:
+                es_primo = False
+                break
+
+        if es_primo:
+            numeros_primos.append(numero)
+
+        numero += 1
+
+    return numeros_primos
+mostrar_mensaje = lambda mensaje :print(mensaje)
+def main():
+    ingrese_numeros = ingresar_entero("ingrese cantidad de numeros primos:")
+    encontrar_primos = obtener_numeros_primos(ingrese_numeros)
+    generating_message = generar_mensaje(encontrar_primos)
+    mostrar_mensaje(generating_message)
+main()
+  
